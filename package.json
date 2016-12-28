@@ -1,6 +1,6 @@
 {
   "name": "baseui-wc-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Web component utilities to reuse common code",
   "author": "Durga Prasad Sadhanala <dsadhanala@gmail.com>",
   "license": "MIT",
