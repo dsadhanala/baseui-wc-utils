@@ -11,8 +11,8 @@
     "lint": "./node_modules/.bin/eslint src/**/*.js --ignore-pattern 'dist/**/*' --ignore-pattern 'docs/**/*'",
     "webpackServer": "./node_modules/.bin/webpack-dev-server --config webpack.config.js",
     "start": "npm install && npm run lint && npm run webpackServer",
-    "publish": "./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --config webpack.config.js",
-    "release": "npm run lint && npm run publish && npm run docs"
+    "prod": "./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --config webpack.config.js",
+    "release": "npm run lint && npm run prod && npm run docs"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
