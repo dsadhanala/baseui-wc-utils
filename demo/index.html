@@ -17,14 +17,14 @@
                 margin: 2rem 4rem;
             }
         </style>
-        <script src="../dist/baseui-wc-utils.js" charset="utf-8"></script>
+        <script src="../dist/baseui-wc-utils.js"></script>
     </head>
     <body>
         <section id="page-wrap" class="test"></section>
 
         <!-- TODO add tests instead of below section  -->
         <script defer>
-            var { dom } = window['baseui-wc-utils'];
+            var { dom } = window.baseuiWcUtils;
 
             dom.ready(function() {
                 var pw = dom.find('#page-wrap');

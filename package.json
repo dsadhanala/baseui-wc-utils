@@ -1,16 +1,18 @@
 {
   "name": "baseui-wc-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Web component utilities to reuse common code",
   "author": "Durga Prasad Sadhanala <dsadhanala@gmail.com>",
   "license": "MIT",
-  "main": "dist/wc-utils.js",
+  "main": "dist/baseui-wc-utils.js",
+  "jsnext:main": "src/index.js",
   "module": "src/index.js",
   "scripts": {
     "docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
     "lint": "./node_modules/.bin/eslint src/**/*.js --ignore-pattern 'dist/**/*' --ignore-pattern 'docs/**/*'",
     "webpackServer": "./node_modules/.bin/webpack-dev-server --config webpack.config.js",
-    "start": "npm install && npm run lint && npm run webpackServer",
+    "start": "npm install && npm run dev",
+    "dev": "npm run lint && npm run webpackServer",
     "prod": "./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --config webpack.config.js",
     "release": "npm run lint && npm run prod && npm run docs"
   },

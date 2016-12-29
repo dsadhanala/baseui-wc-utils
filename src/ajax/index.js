@@ -1,4 +1,4 @@
 import getJSON from './get-json';
-import loadScript from './load-script';
+import loadScript, { promiseRejected } from './load-script';
 
-export { getJSON, loadScript };
+export { getJSON, loadScript, promiseRejected };

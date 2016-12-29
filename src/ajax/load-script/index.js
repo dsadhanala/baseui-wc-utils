@@ -2,7 +2,7 @@
  * Log load script promise errors
  * @param {string} reason for the failure
  */
-function promiseRejected(reason) {
+export function promiseRejected(reason) {
     throw new Error(`Loading JS assets failed due to ${reason}.`);
 }
 

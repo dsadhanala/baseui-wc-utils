@@ -1,14 +1,15 @@
 import dom from './dom';
-import { getJSON, loadScript } from './ajax';
-import { BaseClass, helpers, htmlEscape } from './custom-element';
 import DocFragmentGenerator from './doc-fragment-generator';
+import { getJSON, loadScript, promiseRejected } from './ajax';
+import { BaseClass, helpers, htmlEscape } from './custom-element';
 
 export {
     dom,
+    DocFragmentGenerator,
     getJSON,
     loadScript,
+    promiseRejected,
     BaseClass,
     helpers,
-    htmlEscape,
-    DocFragmentGenerator
+    htmlEscape
 };

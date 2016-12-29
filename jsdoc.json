@@ -3,9 +3,9 @@
         "allowUnknownTags": false
     },
     "source": {
-        "include": "src",
-        "includePattern": ".js$",
-        "excludePattern": "(node_modules/|docs)"
+        "include": ["src"],
+        "exclude": ["node_modules","docs", "dist"],
+        "includePattern": ".js$"
     },
     "plugins": [
         "plugins/markdown"
