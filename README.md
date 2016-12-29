@@ -27,17 +27,17 @@ npm run release
 1. This will perform first 3 steps from above and tree shake and minify for production
 1. Also creates documentation for JS files using jsdoc blocker comments
 
-#### Usage
+#### Usage guide (to be updated)
 Import only needed helpers to utilize tree shaking
 ```
 import { dom, BaseClass } from 'baseui-wc-utils';
 ```
 Or
 ```
-import wcUtils from 'baseui-wc-utils';
+import baseuiWcUtils from 'baseui-wc-utils';
 ```
 
 in browser script tag
 ```
-const { dom } = window['baseui-wc-utils'] or var dom = window['baseui-wc-utils'].dom;
+const { dom } = window.baseuiWcUtils or var dom = window.baseuiWcUtils.dom;
 ```
