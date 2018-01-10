@@ -1,5 +1,5 @@
 import { loopEach } from '../dom';
-import { addAttributes } from '../custom-element/helpers';
+import { addAttributes } from '../helpers';
 
 class BuildDocumentFragment {
     constructor(htmlElementsArray = []) {

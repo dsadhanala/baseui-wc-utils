@@ -29,6 +29,6 @@ function checkRequestStatus(response) {
  */
 export default function getJSON(url) {
     return fetch(url, { credentials: 'same-origin' })
-    .then(checkRequestStatus)
-    .then(getParsedJSON);
+        .then(checkRequestStatus)
+        .then(getParsedJSON);
 }

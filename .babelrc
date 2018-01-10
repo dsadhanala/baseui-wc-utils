@@ -1,5 +1,25 @@
 {
     "presets": [
-        ["es2015", { "modules": false }]
+        [
+            "env",
+            {
+                "targets": {
+                    "browsers": [
+                        "last 2 Chrome versions",
+                        "last 2 Firefox versions",
+                        "last 2 Edge versions",
+                        "last 2 Safari versions",
+                        "ie 11"
+                    ]
+                },
+                "modules": false,
+                "useBuiltIns": true
+            }
+        ],
+        "stage-0"
+    ],
+    "plugins": [
+        "external-helpers",
+        "transform-object-rest-spread"
     ]
 }

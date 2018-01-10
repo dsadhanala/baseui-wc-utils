@@ -1,15 +1,5 @@
-import dom from './dom';
-import DocFragmentGenerator from './doc-fragment-generator';
-import { getJSON, loadScript, promiseRejected } from './ajax';
-import { BaseClass, helpers, htmlEscape } from './custom-element';
-
-export {
-    dom,
-    DocFragmentGenerator,
-    getJSON,
-    loadScript,
-    promiseRejected,
-    BaseClass,
-    helpers,
-    htmlEscape
-};
+export { default as dom } from './dom';
+export { default as DocFragmentGenerator } from './doc-fragment-generator';
+export { getJSON, loadScript } from './ajax';
+export { default as helpers } from './helpers';
+export { default as htmlEscape } from './html-escape';

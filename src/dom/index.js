@@ -27,9 +27,14 @@ export function find(selector, context = document, mode = 'one') {
  * @param {array} array elements to loop through
  * @param {Function} callback function to call for each iteration
  */
-export function loopEach(array, callback) {
-    for (let i = 0, length = array.length; i < length; i += 1) {
-        callback(array[i], i, array);
+export function loopEach(array, cb) {
+    if (Array.from) {
+        Array.from(array).forEach(cb);
+        return;
+    }
+
+    for (let i = 0, { length } = array; i < length; i += 1) {
+        cb(array[i], i, array);
     }
 }
 

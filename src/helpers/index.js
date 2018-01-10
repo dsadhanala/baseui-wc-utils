@@ -49,7 +49,7 @@ export function setBooleanAttributeValue(props, attr) {
  * @return {boolean} response valid date or not
  */
 export function isValidDate(value) {
-    return !isNaN(Date.parse(value));
+    return !Number.isNaN(Date.parse(value));
 }
 
 /**
@@ -65,4 +65,11 @@ export function addAttributes(attrs, field) {
     });
 }
 
-export default { toHyphenCase, toCamelCase, createProps, setBooleanAttributeValue, isValidDate, addAttributes };
+export default {
+    toHyphenCase,
+    toCamelCase,
+    createProps,
+    setBooleanAttributeValue,
+    isValidDate,
+    addAttributes
+};
