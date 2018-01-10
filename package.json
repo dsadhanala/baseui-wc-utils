@@ -1,6 +1,6 @@
 {
   "name": "baseui-wc-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Web component utilities to reuse common code",
   "author": "Durga Prasad Sadhanala <dsadhanala@gmail.com>",
   "license": "MIT",
@@ -40,9 +40,7 @@
     "rollup-plugin-uglify": "^2.0.1",
     "webpack": "^3.10.0",
     "webpack-dashboard": "0.4.0",
-    "webpack-dev-server": "^2.10.1"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^2.10.1",
     "live-server": "^1.2.0"
   }
 }
